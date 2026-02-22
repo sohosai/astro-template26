@@ -61,6 +61,15 @@
       "indentWidth": 2
     }
   },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "tab"
+    },
+    "linter": {
+      "enabled": false
+    }
+  },
   "assist": {
     "enabled": true,
     "actions": {

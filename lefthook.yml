@@ -2,6 +2,10 @@ pre-commit:
   parallel: true
   commands:
     biome:
-      glob: "**/*.{js,ts,jsx,tsx,json,jsonc,cjs,mjs,cts,mts}"
+      glob: "**/*.{js,ts,jsx,tsx,json,jsonc,cjs,mjs,cts,mts,css,scss}"
       run: bunx biome check --write {staged_files}
+      stage_fixed: true
+    stylelint:
+      glob: "**/*.{css,scss}"
+      run: bunx stylelint --fix {staged_files}
       stage_fixed: true
