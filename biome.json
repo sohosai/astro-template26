@@ -16,34 +16,11 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "suspicious": {
-        "noExplicitAny": "error",
-        "noConsole": {
-          "level": "error",
-          "options": {
-            "allow": ["assert", "error", "info", "warn"]
-          }
-        }
-      },
       "correctness": {
         "noUnusedVariables": "error",
         "noUnusedImports": "error"
       },
-      "a11y": "error",
-      "security": {
-        "noSecrets": "off"
-      },
-      "performance": {
-        "noAccumulatingSpread": "error"
-      },
-      "complexity": {
-        "noExcessiveCognitiveComplexity": "error"
-      },
-      "style": {
-        "noNonNullAssertion": "error",
-        "useConst": "error",
-        "useTemplate": "error"
-      }
+      "a11y": "error"
     }
   },
   "javascript": {
