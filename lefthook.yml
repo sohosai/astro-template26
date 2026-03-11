@@ -9,3 +9,9 @@ pre-commit:
       glob: "**/*.{css,scss}"
       run: bunx stylelint --fix {staged_files}
       stage_fixed: true
+
+pre-push:
+  commands:
+    protect-main:
+      interactive: true
+      run: bun scripts/confirm-push.ts
