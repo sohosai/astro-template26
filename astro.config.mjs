@@ -4,6 +4,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://example.com", // TODO: 実際のドメインに変更
+	site: "https://example.com", // TODO: プロジェクトのドメインに変更
 	integrations: [sitemap()],
 });

@@ -41,11 +41,11 @@ OGP 画像は `public/images/` に配置する（URL パスの固定が必要な
 
 全ページに `<link rel="canonical">` を出力する。`Astro.site` + `Astro.url.pathname` から自動生成される。
 
-`astro.config.mjs` の `site` を案件のドメインに設定すること。
+`astro.config.mjs` の `site` をプロジェクトのドメインに設定すること。
 
 ```js
 export default defineConfig({
-  site: "https://example.com", // TODO: 案件のドメインに変更
+  site: "https://example.com", // TODO: プロジェクトのドメインに変更
 });
 ```
 
@@ -59,4 +59,4 @@ bunx astro add sitemap
 
 ## robots.txt
 
-`public/robots.txt` に配置済み。`Sitemap` の URL は案件のドメインに合わせて変更すること。
+`public/robots.txt` に配置済み。`Sitemap` の URL プロジェクトのドメインに合わせて変更すること。
