@@ -51,11 +51,7 @@ export default defineConfig({
 
 ## sitemap
 
-`@astrojs/sitemap` を導入する。`astro.config.mjs` の `site` が設定されていれば、ビルド時に自動生成される。
-
-```bash
-bunx astro add sitemap
-```
+`@astrojs/sitemap` 導入済み。`astro.config.mjs` の `site` が設定されていれば、ビルド時に自動生成される。
 
 ## robots.txt
 

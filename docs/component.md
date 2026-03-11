@@ -52,7 +52,7 @@ src/layouts/
 
 ```astro
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="ページタイトル" description="ページの説明">

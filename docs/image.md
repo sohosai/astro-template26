@@ -31,7 +31,7 @@ Astro の `<Image />` コンポーネントを使用する。
 ```astro
 ---
 import { Image } from "astro:assets";
-import hero from "../assets/images/home/hero.jpg";
+import hero from "@/assets/images/home/hero.jpg";
 ---
 
 <Image src={hero} alt="メインビジュアル" />
