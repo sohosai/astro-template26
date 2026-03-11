@@ -37,6 +37,36 @@ const { title, description } = Astro.props;
 ---
 ```
 
+## レイアウト
+
+`src/layouts/` にレイアウトコンポーネントを配置する。レイアウトは `<html>` や `<head>` を含むページ全体の枠組みを定義する。
+
+```
+src/layouts/
+  Layout.astro       # 共通レイアウト
+```
+
+### 使い方
+
+ページコンポーネントでレイアウトをインポートし、コンテンツを囲む。
+
+```astro
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="ページタイトル" description="ページの説明">
+  <h1>ページタイトル</h1>
+</Layout>
+```
+
+### Layout.astro の役割
+
+- `reset.css` / `global.scss` のインポート
+- `<html>`, `<head>`, `<body>` の共通構造
+- Google Fonts の読み込み
+- `title`, `description` 等の meta 情報を Props で受け取る
+
 ## 備考
 
 - スタイルの規約は [style.md](./style.md) を参照
