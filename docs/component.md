@@ -70,5 +70,5 @@ import Layout from "@/layouts/Layout.astro";
 ## 備考
 
 - スタイルの規約は [style.md](./style.md) を参照
-- Biomeの `noUnusedImports` / `noUnusedVariables` は `.astro` ファイルではテンプレート部分を認識できないため、overridesで無効化している
-- 将来的にESLint + eslint-plugin-astro への移行を検討する可能性あり
+- リンターは **ESLint** + `eslint-plugin-astro` を使用している
+- フォーマッターは **Prettier** + `prettier-plugin-astro` を使用している
