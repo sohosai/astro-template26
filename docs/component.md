@@ -29,8 +29,8 @@ src/components/
 ```astro
 ---
 interface Props {
-  title: string;
-  description?: string;
+	title: string;
+	description?: string;
 }
 
 const { title, description } = Astro.props;
@@ -56,7 +56,7 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="ページタイトル" description="ページの説明">
-  <h1>ページタイトル</h1>
+	<h1>ページタイトル</h1>
 </Layout>
 ```
 

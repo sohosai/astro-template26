@@ -5,9 +5,7 @@
 `Layout.astro` が `title`, `description` を Props で受け取り、`<head>` に出力する。
 
 ```astro
-<Layout title="ページタイトル" description="ページの説明">
-  ...
-</Layout>
+<Layout title="ページタイトル" description="ページの説明"> ... </Layout>
 ```
 
 - `title` は必須
@@ -17,18 +15,18 @@
 
 `Layout.astro` が以下の OGP タグを出力する。
 
-| タグ | 値 |
-|---|---|
-| `og:title` | `title` Props |
-| `og:description` | `description` Props |
-| `og:type` | `website` |
-| `og:url` | ページの canonical URL |
-| `og:image` | `ogImage` Props（デフォルト: `/images/ogp.jpg`） |
+| タグ             | 値                                               |
+| ---------------- | ------------------------------------------------ |
+| `og:title`       | `title` Props                                    |
+| `og:description` | `description` Props                              |
+| `og:type`        | `website`                                        |
+| `og:url`         | ページの canonical URL                           |
+| `og:image`       | `ogImage` Props（デフォルト: `/images/ogp.jpg`） |
 
 ページごとに OGP 画像を変えたい場合は `ogImage` Props を指定する。
 
 ```astro
-<Layout title="About" description="会社概要" ogImage="/images/about-ogp.jpg">
+<Layout title="About" description="会社概要" ogImage="/images/about-ogp.jpg" />
 ```
 
 OGP 画像は `public/images/` に配置する（URL パスの固定が必要なため）。
@@ -45,7 +43,7 @@ OGP 画像は `public/images/` に配置する（URL パスの固定が必要な
 
 ```js
 export default defineConfig({
-  site: "https://example.com", // TODO: プロジェクトのドメインに変更
+	site: "https://example.com", // TODO: プロジェクトのドメインに変更
 });
 ```
 
