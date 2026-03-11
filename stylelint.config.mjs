@@ -5,7 +5,10 @@ export default {
 		"stylelint-config-recess-order",
 		"stylelint-config-html/astro",
 	],
-	plugins: ["stylelint-order"],
+	plugins: [
+		"stylelint-order",
+		"stylelint-declaration-block-no-ignored-properties",
+	],
 	rules: {
 		"plugin/declaration-block-no-ignored-properties": true,
 		// RSCSS記法に適合しないためOFF

@@ -1,43 +1,27 @@
-# Astro Starter Kit: Minimal
+# Astro Template
 
-```sh
-bun create astro@latest -- --template minimal
+## セットアップ
+
+```bash
+bun install
+bun dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## プロジェクト開始時に変更する項目
 
-## 🚀 Project Structure
+| 項目 | ファイル | 変更内容 |
+|---|---|---|
+| サイトURL | `astro.config.mjs` | `site` を実際のドメインに変更 |
+| サイトURL | `public/robots.txt` | `Sitemap` の URL を実際のドメインに変更 |
+| OGP 画像 | `public/images/ogp.jpg` | デフォルトの OGP 画像を配置 |
+| favicon | `public/` | `favicon.svg` / `favicon.ico` を差し替え |
+| フォント | `src/layouts/Layout.astro` | Google Fonts の読み込みをプロジェクトに合わせて変更 |
+| フォント | `src/styles/_variables.scss` | `--font-family-base` / `--font-family-en` を変更 |
+| カラー | `src/styles/_variables.scss` | `--color-*` をデザインに合わせて変更 |
 
-Inside of your Astro project, you'll see the following folders and files:
+## ドキュメント
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [コンポーネント規約](docs/component.md)
+- [スタイル規約](docs/style.md)
+- [画像規約](docs/image.md)
+- [SEO 規約](docs/seo.md)
