@@ -52,6 +52,7 @@ export default [
 					varsIgnorePattern: "^_",
 				},
 			],
+			"@typescript-eslint/consistent-type-imports": "error",
 			"@dword-design/import-alias/prefer-alias": [
 				"error",
 				{
