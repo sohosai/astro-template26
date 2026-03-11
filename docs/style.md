@@ -20,15 +20,15 @@ import styles from "./Button.module.scss";
 ---
 
 <button class={styles.button}>
-  <slot />
+	<slot />
 </button>
 ```
 
 ```scss
 // Button.module.scss
 .button {
-  display: inline-flex;
-  padding: 0.75em 1.5em;
+	display: inline-flex;
+	padding: 0.75em 1.5em;
 }
 ```
 
@@ -65,16 +65,16 @@ border-radius: var(--radius-md);
 
 ```scss
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	@media (max-width: 900px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
+	@media (max-width: 500px) {
+		grid-template-columns: 1fr;
+	}
 }
 ```
 

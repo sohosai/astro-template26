@@ -10,7 +10,7 @@ if (branch !== "main") {
 
 // 標準入力から確認を取得
 const input = prompt(
-	"\x1b[33m⚠ mainブランチに直接pushしようとしています。続行しますか？ (y/N)\x1b[0m"
+	"\x1b[33m⚠ mainブランチに直接pushしようとしています。続行しますか？ (y/N)\x1b[0m",
 );
 
 if (input?.trim().toLowerCase() === "y") {
