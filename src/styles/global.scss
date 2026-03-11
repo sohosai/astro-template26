@@ -7,8 +7,10 @@ html {
 
 body {
 	font-family: var(--font-family-base);
+	font-style: normal;
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	text-autospace: normal;
 }
 
 a {
