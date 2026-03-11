@@ -3,6 +3,10 @@
 html {
 	scroll-behavior: smooth;
 	font-size: 100%;
+
+	@media (prefers-reduced-motion: reduce) {
+		scroll-behavior: auto;
+	}
 }
 
 body {
