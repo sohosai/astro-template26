@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# TypeScript incremental build cache
+*.tsbuildinfo
 
 # dependencies
 node_modules/
