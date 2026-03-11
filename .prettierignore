@@ -1,2 +1,5 @@
 dist/
 .astro/
+public/
+bun.lock
+pnpm-lock.yaml
