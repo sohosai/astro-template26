@@ -11,9 +11,9 @@
     "lint": "eslint . && stylelint \"**/*.{css,scss}\"",
     "lint:eslint": "eslint .",
     "lint:stylelint": "stylelint \"**/*.{css,scss}\"",
-    "format": "eslint --fix .",
-    "check": "eslint --fix . && stylelint --fix \"**/*.{css,scss}\"",
-    "ci": "eslint . && stylelint \"**/*.{css,scss}\""
+    "format": "prettier --write .",
+    "check": "eslint --fix . && prettier --write . && stylelint --fix \"**/*.{css,scss}\"",
+    "ci": "eslint . && prettier --check . && stylelint \"**/*.{css,scss}\""
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
@@ -25,6 +25,8 @@
     "eslint": "^10.0.3",
     "eslint-plugin-astro": "^1.6.0",
     "lefthook": "^2.1.1",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
     "sass": "^1.98.0",
     "stylelint": "^17.3.0",
     "stylelint-config-html": "^1.1.0",
