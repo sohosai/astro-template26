@@ -3,7 +3,7 @@ import js from "@eslint/js";
 import { globalIgnores } from "eslint/config";
 import eslintConfigPrettier from "eslint-config-prettier";
 import eslintPluginAstro from "eslint-plugin-astro";
-import eslintPluginImport from "eslint-plugin-import";
+import eslintPluginImportX from "eslint-plugin-import-x";
 import unusedImports from "eslint-plugin-unused-imports";
 import globals from "globals";
 import tseslint from "typescript-eslint";
@@ -16,7 +16,7 @@ export default [
 	importAlias.configs.recommended,
 	{
 		plugins: {
-			import: eslintPluginImport,
+			import: eslintPluginImportX,
 			"unused-imports": unusedImports,
 		},
 		rules: {
