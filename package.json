@@ -8,12 +8,15 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"typecheck": "astro check",
-		"lint": "eslint . && stylelint \"**/*.{css,scss,astro}\"",
-		"lint:eslint": "eslint .",
-		"lint:stylelint": "stylelint \"**/*.{css,scss,astro}\"",
+		"lint": "eslint --fix .",
+		"lint:check": "eslint .",
 		"format": "prettier --write .",
-		"check": "eslint --fix . && prettier --write . && stylelint --fix \"**/*.{css,scss,astro}\"",
-		"ci": "eslint . && prettier --check . && stylelint \"**/*.{css,scss,astro}\""
+		"format:check": "prettier --check .",
+		"stylelint": "stylelint --fix \"**/*.{css,scss,astro}\"",
+		"stylelint:check": "stylelint \"**/*.{css,scss,astro}\"",
+		"fix": "bun run lint && bun run format && bun run stylelint",
+		"check": "bun run lint:check && bun run format:check && bun run stylelint:check",
+		"ci": "bun run check && bun run typecheck"
 	},
 	"dependencies": {
 		"@astrojs/sitemap": "3.7.3",

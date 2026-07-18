@@ -23,11 +23,8 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Lint & Format Check
+      - name: Check
         run: bun run ci
-
-      - name: Type check
-        run: bun run typecheck
 
       - name: Build
         if: github.event_name == 'push' || !github.event.pull_request.draft
