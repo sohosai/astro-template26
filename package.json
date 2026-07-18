@@ -16,8 +16,8 @@
 		"ci": "eslint . && prettier --check . && stylelint \"**/*.{css,scss,astro}\""
 	},
 	"dependencies": {
-		"@astrojs/sitemap": "^3.7.1",
-		"astro": "^5.17.1"
+		"@astrojs/sitemap": "3.7.3",
+		"astro": "7.1.1"
 	},
 	"devDependencies": {
 		"@dword-design/eslint-plugin-import-alias": "^8.1.7",
