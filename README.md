@@ -44,6 +44,7 @@ bun dev
 | フォント  | `src/layouts/Layout.astro`   | Google Fonts の読み込みをプロジェクトに合わせて変更 |
 | フォント  | `src/styles/_variables.scss` | `--font-family-base` / `--font-family-en` を変更    |
 | カラー    | `src/styles/_variables.scss` | `--color-*` をデザインに合わせて変更                |
+| a11y      | `docs/accessibility.md`      | リンク、スキップリンク、コントラスト等の方針を確認  |
 | 言語      | `src/layouts/Layout.astro`   | `<html lang="ja">` をプロジェクトの言語に変更       |
 | タイトル  | `src/pages/index.astro`      | デフォルトの `title` を変更                         |
 | 404       | `src/pages/404.astro`        | エラーメッセージをプロジェクトに合わせて変更        |
@@ -54,3 +55,4 @@ bun dev
 - [スタイル規約](docs/style.md)
 - [画像規約](docs/image.md)
 - [SEO 規約](docs/seo.md)
+- [アクセシビリティ規約](docs/accessibility.md)
