@@ -17,7 +17,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{description && <meta name="description" content={description} />}
 		<link rel="canonical" href={canonicalURL} />
 
@@ -46,13 +46,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 			media="print"
-			onload='this.media="all"'
+			onload="this.setAttribute('media', 'all')"
 		/>
 
 		<!-- Title -->
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<a class="skip-link" href="#main-content">本文へスキップ</a>
+		<main id="main-content" tabindex="-1">
+			<slot />
+		</main>
 	</body>
 </html>
