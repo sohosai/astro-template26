@@ -12,7 +12,7 @@ export default [
 	js.configs.recommended,
 	...tseslint.configs.recommended,
 	...eslintPluginAstro.configs["flat/recommended"],
-	...eslintPluginAstro.configs["flat/jsx-a11y-recommended"],
+	...eslintPluginAstro.configs["flat/jsx-a11y-strict"],
 	importAlias.configs.recommended,
 	{
 		plugins: {
