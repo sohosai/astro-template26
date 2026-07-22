@@ -31,7 +31,8 @@ body {
 a {
 	color: inherit;
 
-	&:hover {
+	&:hover,
+	&:focus-visible {
 		text-decoration: none;
 	}
 }
