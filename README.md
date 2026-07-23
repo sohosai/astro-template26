@@ -30,8 +30,8 @@ bun dev
 - 作業中にまとめて直す場合は `bun run fix` を使います。import順、未使用import、Prettier整形、CSS/SCSS/AstroのStylelint自動修正が対象です。
 - エラー確認だけをしたい場合は `bun run check` を使います。
 - CI向けの検査をローカルで行う場合は `bun run ci` を使います。`ci` は自動修正しないため、失敗した場合は `bun run fix` で直してから再実行してください。
-- commit時は Lefthook の `pre-commit` でESLint、Prettier、Stylelintの自動修正がstaged filesに対して実行されます。
-- push時の `pre-push` は main ブランチへの直接push確認のみで、lintは実行しません。
+- commit時は Lefthook の `pre-commit` でPrettierの自動整形のみがstaged filesに対して実行されます。
+- push時は Lefthook の `pre-push` で main ブランチへの直接push確認と `bun run ci` が実行されます。
 
 ## プロジェクト開始時に変更する項目
 

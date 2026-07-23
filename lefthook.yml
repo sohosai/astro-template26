@@ -1,17 +1,8 @@
 pre-commit:
-  parallel: true
   commands:
-    eslint:
-      glob: "**/*.{js,ts,jsx,tsx,mjs,cjs,astro}"
-      run: bunx eslint --fix {staged_files}
-      stage_fixed: true
     prettier:
       glob: "**/*.{js,ts,jsx,tsx,mjs,cjs,astro,json,css,scss,md,yml,yaml}"
       run: bunx prettier --write {staged_files}
-      stage_fixed: true
-    stylelint:
-      glob: "**/*.{css,scss,astro}"
-      run: bunx stylelint --fix {staged_files}
       stage_fixed: true
 
 pre-push:
@@ -19,3 +10,5 @@ pre-push:
     protect-main:
       interactive: true
       run: bun scripts/confirm-push.ts
+    ci:
+      run: bun run ci
